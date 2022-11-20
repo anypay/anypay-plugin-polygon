@@ -1,0 +1,30 @@
+{
+  "name": "anypay-plugin-polygon",
+  "version": "0.0.2",
+  "description": "Applications that facilitate communciation of value between their users must ensure all payments are valid, perfect, and confirm as expected every time. That's where Anypay comes in, and one of the most popular wallet developers among users of Anypay reached out with a desire for support of ERC-20 token payments on Polygon, specifically USDC.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anypay/anypay-plugin-polygon.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anypay/anypay-plugin-polygon/issues"
+  },
+  "homepage": "https://github.com/anypay/anypay-plugin-polygon#readme",
+  "dependencies": {
+    "@maticnetwork/maticjs": "^3.5.0",
+    "@maticnetwork/maticjs-web3": "^1.0.2",
+    "@truffle/hdwallet-provider": "^2.1.1",
+    "dotenv": "^16.0.3",
+    "ethers": "^5.7.2"
+  },
+  "devDependencies": {
+    "commitizen": "^4.2.5"
+  }
+}

@@ -10,3 +10,40 @@ For completeness and acceptance as a new blockchain into the Anypay system this 
 4. broadcast the signed transaction to the network and validate it is confirmed
 
 Step 2 constructing the transaction is performed by the wallet and will be implemented by walletbot.dev so that we have a simple reference implementation that anyone can run from node.js or the command line.
+
+## Usage
+
+```
+import plugin from 'anypay-plugin-polygon'
+
+const polygon = plugin()
+
+async function main() {
+
+    
+    const paymentRequest = await polygon.makePaymentRequest([{
+        to: '0xFEb423814D0208e9e2a3F5B0F0171e97376E20Bc'
+    }])
+
+}
+
+main()
+
+```
+
+```
+
+import { loadWallet } from 'wallet-bot'
+
+async function main() {
+
+    const wallet = await loadWallet([{
+        currency: 'USDC',
+        chain: 'Polygon'
+    }])
+
+}
+
+main()
+
+```
