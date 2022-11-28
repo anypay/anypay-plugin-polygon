@@ -39,8 +39,12 @@ async function main() {
 
     const wallet = await loadWallet([{
         currency: 'USDC',
-        chain: 'Polygon'
+        chain: 'Polygon',
+        privatekey: '',
+        address: ''
     }])
+
+    
 
 }
 
